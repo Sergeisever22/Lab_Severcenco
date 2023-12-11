@@ -1,0 +1,17 @@
+// main.cpp
+
+#include <iostream>
+
+static int hello(int x);
+
+int main() {
+    int result = hello(4);
+    std::cout << "Result: " << result << std::endl;
+    return 0;
+}
+
+// f.cpp
+static int hello(int x) {
+    return x * 4;
+}
+
